@@ -1,0 +1,483 @@
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --main:#1e3a8a;
+  --sec:#f97316;
+  --acc:#14b8a6;
+  --text:#1f2937;
+  --border:#dbe4f0;
+  --soft:#eef4ff;
+  --shadow:0 10px 25px rgba(30,58,138,.12);
+  --page-pad:5vw;
+  --pad:1.1rem;
+  --gap:1.1rem;
+  --max:1400px;
+  --video-h:360px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  font-size:16px;
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:"Montserrat", Arial, Helvetica, sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,#f8fbff 0%,#edf3fb 100%);
+}
+
+img,
+iframe{
+  display:block;
+  max-width:100%;
+}
+
+a{
+  color:var(--main);
+  text-decoration:none;
+  transition:.3s ease;
+}
+
+header,
+main,
+footer{
+  width:min(calc(100% - 2*var(--page-pad)), var(--max));
+  margin-inline:auto;
+}
+
+header,
+main > section,
+main > aside,
+footer{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;
+  box-shadow:var(--shadow);
+}
+
+header,
+footer{
+  padding:1rem 1.2rem;
+}
+
+header{
+  margin-top:1.25rem;
+}
+
+main{
+  margin-top:1.25rem;
+  display:grid;
+  gap:var(--gap);
+  grid-template-areas:
+    "acasa acasa acasa"
+    "categorii produse oferte"
+    "video video video"
+    "info tabel contact"
+    "faq faq faq";
+  grid-template-columns:0.95fr 1.8fr 0.95fr;
+  align-items:start;
+}
+
+main > section,
+main > aside{
+  padding:var(--pad);
+}
+
+header hgroup{
+  margin-bottom:1rem;
+}
+
+header h1{
+  margin:0;
+  color:var(--main);
+  font-size:2rem;
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+}
+
+header hgroup p{
+  margin:.35rem 0 0;
+  color:#5b6475;
+  font-weight:600;
+}
+
+nav > ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.8rem;
+}
+
+nav > ul > li{
+  position:relative;
+}
+
+nav a{
+  display:block;
+  padding:.8rem 1rem;
+  background:var(--soft);
+  border:1px solid var(--border);
+  border-radius:14px;
+  font-weight:700;
+}
+
+nav a:hover{
+  background:var(--sec);
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+nav ul ul{
+  display:none;
+  position:absolute;
+  left:0;
+  top:calc(100% + .35rem);
+  min-width:220px;
+  margin:0;
+  padding:.55rem;
+  list-style:none;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  z-index:20;
+}
+
+nav ul li:hover > ul{
+  display:block;
+}
+
+#acasa{grid-area:acasa;}
+#categorii{grid-area:categorii;}
+#produse{grid-area:produse;}
+#oferte{grid-area:oferte;}
+#video{grid-area:video;}
+aside{grid-area:info; align-self:start;}
+#tabel-produse{grid-area:tabel; overflow-x:auto;}
+#contact{grid-area:contact; align-self:start;}
+#intrebari-frecvente{grid-area:faq;}
+#evenimente{display:none;}
+
+#acasa > h2,
+#produse > h2,
+#video > h2,
+#tabel-produse > h2,
+#intrebari-frecvente > h2,
+#contact > h2,
+aside > h2{
+  margin:0 0 1rem 0;
+  color:var(--main);
+}
+
+#categorii h3,
+#oferte h3{
+  margin:0 0 1rem 0;
+  color:var(--main);
+}
+
+#acasa{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+#acasa > figure{
+  margin:0;
+  padding:1rem;
+  background:linear-gradient(135deg, rgba(30,58,138,.08), rgba(20,184,166,.12));
+  border-radius:20px;
+  width:min(100%, 760px);
+}
+
+#acasa img{
+  width:100%;
+  max-height:520px;
+  object-fit:cover;
+  border-radius:16px;
+  box-shadow:var(--shadow);
+}
+
+#acasa figcaption{
+  margin-top:.8rem;
+  font-weight:600;
+}
+
+#categorii,
+#oferte,
+#intrebari-frecvente{
+  background:var(--soft);
+}
+
+#categorii p,
+#oferte p,
+#produse p,
+#contact p,
+aside p,
+#intrebari-frecvente p,
+li{
+  line-height:1.6;
+}
+
+#referinta a{
+  overflow-wrap:anywhere;
+}
+
+meter{
+  width:min(100%, 280px);
+  height:1rem;
+}
+
+blockquote{
+  margin:1rem 0 0;
+  padding:1rem;
+  border-left:5px solid var(--sec);
+  background:#fff7ed;
+  border-radius:0 14px 14px 0;
+}
+
+#video > div{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.8rem;
+  margin-bottom:1rem;
+}
+
+#video > div a{
+  min-width:180px;
+  text-align:center;
+  padding:.9rem 1rem;
+  background:var(--soft);
+  border:1px solid var(--border);
+  border-radius:15px 15px 0 0;
+  font-weight:700;
+}
+
+#video > div a:hover{
+  background:var(--main);
+  color:#fff;
+}
+
+#video iframe{
+  width:100%;
+  height:var(--video-h);
+  border:4px solid var(--main);
+  border-radius:20px;
+  background:#000;
+}
+
+#tabel-produse table{
+  width:100%;
+  min-width:720px;
+  border-collapse:separate;
+  border-spacing:0;
+}
+
+#tabel-produse caption{
+  caption-side:bottom;
+  padding-top:.85rem;
+  font-weight:700;
+}
+
+#tabel-produse th,
+#tabel-produse td{
+  padding:.95rem;
+  text-align:left;
+  border:1px solid var(--border);
+}
+
+#tabel-produse thead th{
+  background:var(--main);
+  color:#fff;
+}
+
+#tabel-produse tbody tr:nth-child(odd){
+  background:rgba(30,58,138,.05);
+}
+
+#tabel-produse tbody tr:nth-child(even){
+  background:rgba(249,115,22,.06);
+}
+
+#tabel-produse tbody tr{
+  transition:background .75s, font-size .75s;
+}
+
+#tabel-produse tbody tr:hover{
+  background:rgba(20,184,166,.18);
+  font-size:1.08em;
+}
+
+details{
+  padding:.95rem 1rem;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+}
+
+details + details{
+  margin-top:.8rem;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:700;
+  color:var(--main);
+}
+
+#link-top{
+  position:fixed;
+  right:1.2rem;
+  bottom:1.2rem;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:rgba(255,255,255,.8);
+  border:2px solid var(--main);
+  box-shadow:0 10px 24px rgba(0,0,0,.18);
+  font-size:0;
+  opacity:.8;
+  z-index:1000;
+}
+
+#link-top::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-58%);
+  width:0;
+  height:0;
+  border-left:12px solid transparent;
+  border-right:12px solid transparent;
+  border-bottom:20px solid var(--main);
+}
+
+#link-top::after{
+  content:"Sus";
+  position:absolute;
+  right:80px;
+  top:50%;
+  transform:translateY(-50%);
+  padding:.45rem .7rem;
+  background:var(--text);
+  color:#fff;
+  border-radius:10px;
+  font-size:.9rem;
+  opacity:0;
+  white-space:nowrap;
+  transition:opacity .3s ease;
+}
+
+#link-top:hover{
+  background:rgba(30,58,138,.14);
+  opacity:1;
+  transform:translateY(-4px);
+}
+
+#link-top:hover::after{
+  opacity:1;
+}
+
+footer{
+  margin-top:1.25rem;
+  margin-bottom:2rem;
+}
+
+footer small{
+  display:block;
+  margin-bottom:.8rem;
+}
+
+footer address{
+  font-style:normal;
+}
+
+footer p{
+  margin:.45rem 0;
+  line-height:1.6;
+}
+
+@media (max-width:1100px){
+  :root{
+    --page-pad:3.5vw;
+    --gap:1rem;
+    --video-h:320px;
+  }
+
+  html{
+    font-size:15px;
+  }
+
+  main{
+    grid-template-areas:
+      "acasa acasa"
+      "categorii oferte"
+      "produse contact"
+      "video video"
+      "tabel info"
+      "faq faq";
+    grid-template-columns:1fr 1fr;
+  }
+
+  #acasa > figure{
+    width:100%;
+  }
+}
+
+@media (max-width:700px){
+  :root{
+    --page-pad:14px;
+    --pad:1rem;
+    --video-h:250px;
+  }
+
+  html{
+    font-size:14px;
+  }
+
+  nav > ul{
+    flex-direction:column;
+  }
+
+  nav ul ul{
+    position:static;
+    display:block;
+    min-width:0;
+    margin-top:.5rem;
+    padding:.5rem 0 0 1rem;
+    background:transparent;
+    border:none;
+    box-shadow:none;
+  }
+
+  main{
+    grid-template-areas:
+      "acasa"
+      "categorii"
+      "produse"
+      "oferte"
+      "video"
+      "tabel"
+      "info"
+      "contact"
+      "faq";
+    grid-template-columns:1fr;
+  }
+
+  #video > div{
+    flex-direction:column;
+  }
+
+  #link-top{
+    width:60px;
+    height:60px;
+  }
+}

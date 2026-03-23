@@ -1,0 +1,508 @@
+:root {
+  --culoare-fundal: #f4f7fb;
+  --culoare-card: #ffffff;
+  --culoare-principala: #1e3a8a;
+  --culoare-secundara: #f97316;
+  --culoare-accent: #14b8a6;
+  --culoare-text: #1f2937;
+  --culoare-border: #dbe4f0;
+  --culoare-deschisa: #eef4ff;
+  --umbra-card: 0 10px 25px rgba(30, 58, 138, 0.12);
+  --spatiere-pagina: 5vw;
+  --padding-zona: 1.1rem;
+  --gap-zona: 1.1rem;
+  --latime-maxima: 1400px;
+  --inaltime-video: 360px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8fbff 0%, #edf3fb 100%);
+  color: var(--culoare-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--culoare-principala);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+header,
+main,
+footer {
+  width: min(calc(100% - 2 * var(--spatiere-pagina)), var(--latime-maxima));
+  margin-inline: auto;
+}
+
+header {
+  margin-top: 1.25rem;
+  padding: 1rem 1.2rem;
+  background: var(--culoare-card);
+  border: 1px solid var(--culoare-border);
+  border-radius: 22px;
+  box-shadow: var(--umbra-card);
+}
+
+header hgroup {
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--culoare-principala);
+  font-size: 2rem;
+}
+
+header hgroup p {
+  margin: 0.35rem 0 0;
+  color: #5b6475;
+  font-weight: 600;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+nav > ul > li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 0.8rem 1rem;
+  background: var(--culoare-deschisa);
+  border: 1px solid var(--culoare-border);
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  background: var(--culoare-secundara);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.35rem);
+  min-width: 220px;
+  margin: 0;
+  padding: 0.55rem;
+  list-style: none;
+  background: var(--culoare-card);
+  border: 1px solid var(--culoare-border);
+  border-radius: 16px;
+  box-shadow: var(--umbra-card);
+  z-index: 20;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+main {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: var(--gap-zona);
+  grid-template-areas:
+    "acasa acasa produse"
+    "video video produse"
+    "tabel tabel faq"
+    "info contact contact";
+  grid-template-columns: 1.15fr 1.15fr 0.9fr;
+}
+
+main > section,
+main > aside {
+  padding: var(--padding-zona);
+  background: var(--culoare-card);
+  border: 1px solid var(--culoare-border);
+  border-radius: 22px;
+  box-shadow: var(--umbra-card);
+}
+
+#acasa {
+  grid-area: acasa;
+}
+
+#produse {
+  grid-area: produse;
+}
+
+#video {
+  grid-area: video;
+}
+
+#tabel-produse {
+  grid-area: tabel;
+  overflow-x: auto;
+}
+
+#intrebari-frecvente {
+  grid-area: faq;
+}
+
+aside {
+  grid-area: info;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#acasa {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--gap-zona);
+}
+
+#acasa > h2,
+#produse > h2,
+#video > h2,
+#tabel-produse > h2,
+#intrebari-frecvente > h2,
+#contact > h2,
+aside > h2 {
+  margin-top: 0;
+  color: var(--culoare-principala);
+}
+
+#acasa > figure {
+  margin: 0;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.08), rgba(20, 184, 166, 0.12));
+  border-radius: 20px;
+  align-self: start;
+}
+
+#acasa img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: var(--umbra-card);
+}
+
+#acasa figcaption {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+#categorii,
+#oferte,
+#evenimente {
+  padding: 1rem;
+  background: var(--culoare-deschisa);
+  border: 1px solid var(--culoare-border);
+  border-radius: 18px;
+}
+
+#evenimente {
+  grid-column: 1 / -1;
+}
+
+#categorii h3,
+#oferte h3,
+#evenimente h3 {
+  margin-top: 0;
+  color: var(--culoare-principala);
+}
+
+#referinta a {
+  overflow-wrap: anywhere;
+}
+
+#produse p,
+#contact p,
+aside p,
+#intrebari-frecvente p,
+#categorii p,
+#oferte p,
+#evenimente p,
+li {
+  line-height: 1.6;
+}
+
+meter {
+  width: min(100%, 280px);
+  height: 1rem;
+}
+
+blockquote {
+  margin: 1rem 0 0;
+  padding: 1rem;
+  border-left: 5px solid var(--culoare-secundara);
+  background: #fff7ed;
+  border-radius: 0 14px 14px 0;
+}
+
+#video > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#video > div a {
+  min-width: 180px;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  background: var(--culoare-deschisa);
+  border: 1px solid var(--culoare-border);
+  border-radius: 15px 15px 0 0;
+  font-weight: 700;
+}
+
+#video > div a:hover {
+  background: var(--culoare-principala);
+  color: #fff;
+}
+
+#video iframe {
+  width: 100%;
+  height: var(--inaltime-video);
+  border: 4px solid var(--culoare-principala);
+  border-radius: 20px;
+  background: #000;
+}
+
+#tabel-produse table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+#tabel-produse caption {
+  caption-side: bottom;
+  padding-top: 0.85rem;
+  font-weight: 700;
+}
+
+#tabel-produse th,
+#tabel-produse td {
+  padding: 0.95rem;
+  text-align: left;
+  border: 1px solid var(--culoare-border);
+}
+
+#tabel-produse thead th {
+  background: var(--culoare-principala);
+  color: #fff;
+}
+
+#tabel-produse tbody tr:nth-child(odd) {
+  background: rgba(30, 58, 138, 0.05);
+}
+
+#tabel-produse tbody tr:nth-child(even) {
+  background: rgba(249, 115, 22, 0.06);
+}
+
+#tabel-produse tbody tr {
+  transition: 0.75s ease;
+}
+
+#tabel-produse tbody tr:hover {
+  background: rgba(20, 184, 166, 0.18);
+  font-size: 1.08em;
+}
+
+details {
+  padding: 0.95rem 1rem;
+  background: var(--culoare-deschisa);
+  border: 1px solid var(--culoare-border);
+  border-radius: 16px;
+}
+
+details + details {
+  margin-top: 0.8rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--culoare-principala);
+}
+
+aside {
+  align-self: start;
+}
+
+main > a[href="#acasa"] {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid var(--culoare-principala);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  font-size: 0;
+  opacity: 0.75;
+  z-index: 100;
+}
+
+main > a[href="#acasa"]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -58%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid var(--culoare-principala);
+}
+
+main > a[href="#acasa"]::after {
+  content: "Sus";
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.45rem 0.7rem;
+  background: var(--culoare-text);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+main > a[href="#acasa"]:hover {
+  background: rgba(30, 58, 138, 0.14);
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+main > a[href="#acasa"]:hover::after {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.2rem;
+  background: var(--culoare-card);
+  border: 1px solid var(--culoare-border);
+  border-radius: 22px;
+  box-shadow: var(--umbra-card);
+}
+
+footer small {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+footer address {
+  font-style: normal;
+}
+
+footer p {
+  margin: 0.45rem 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --spatiere-pagina: 3.5vw;
+    --gap-zona: 1rem;
+    --inaltime-video: 320px;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  main {
+    grid-template-areas:
+      "acasa acasa"
+      "produse video"
+      "tabel tabel"
+      "faq info"
+      "contact contact";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #acasa {
+    grid-template-columns: 1fr;
+  }
+
+  #evenimente {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --spatiere-pagina: 14px;
+    --padding-zona: 1rem;
+    --inaltime-video: 250px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  nav ul ul {
+    position: static;
+    display: block;
+    min-width: 0;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0 0 1rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  main {
+    grid-template-areas:
+      "acasa"
+      "produse"
+      "video"
+      "tabel"
+      "faq"
+      "info"
+      "contact";
+    grid-template-columns: 1fr;
+  }
+
+  #video > div {
+    flex-direction: column;
+  }
+
+  main > a[href="#acasa"] {
+    width: 60px;
+    height: 60px;
+  }
+}
