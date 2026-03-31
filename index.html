@@ -26,21 +26,54 @@
         <p>Totul pentru sport!</p>
       </hgroup>
     
-      <nav>
+      <nav aria-label="Meniu principal">
+        <input type="checkbox" id="btn-meniu">
+        <label for="btn-meniu" id="hamburger" aria-label="Deschide meniul" >
+          <span></span>
+
+          <span></span>
+          <span></span>
+        </label>
         <ul>
           <li>
-            <a href="#acasa">Acasă</a>
+            <a href= "index.html#acasa">
+              <i class="fa-solid fa-house"></i>
+              <span>Acasă</span>
+            </a>
             <ul>
-              <li><a href="#categorii">Categorii</a>
-              </li>
-              <li><a href="#oferte">Oferte</a></li>
-              <li><a href="#evenimente">Evenimente</a></li>
+              <li><a href  ="index.html#categorii">Categorii</a></li>
+              <li><a href="index.html#oferte">Oferte</a></li>
+              <li><a  href="index.html#evenimente">Evenimente</a></li>
             </ul>
           </li>
 
-          <li><a href="#produse">Produse</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="index.html#produse">
+              <i class="fa-solid fa-box-open"></i>
+
+              <span>Produse</span>
+            </a>
+          </li>
+
+          <li>
+             <a href="galerie-statica.html">
+              <i class="fa-solid fa-images"></i>
+              <span>Galerii</span>
+            </a>
+            <ul>
+              <li><a href="galerie-statica.html">Galerie statică</a></li>
+              <li><a href="galerie-dinamica.html">Galerie dinamică</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="index.html#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact </span>
+            </a>
+          </li>
         </ul>
+        
       </nav>
     </header>
 
