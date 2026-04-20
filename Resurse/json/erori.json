@@ -1,0 +1,38 @@
+{
+  "cale_baza":"/resurse/img/erori",
+  "eroare_default":
+  {
+    "titlu": "A aparut o eroare",
+    "text": "A aparut o problema.Incearca din nou mai tarziu.",
+    "imagine" :"default.png"
+  },
+
+  "info_erori": [
+    {
+      "identificator": 400,
+      "status": true,
+      "titlu":"Cererea este gresita",
+      "text":"Nu este permis accesul direct la fisiere EJS.",
+      "imagine": "400.png"
+    },
+
+
+    {
+      "identificator":403,
+      "status":true,
+      "titlu": "Accesul interzis ",
+      "text": "Nu ai voie sa accesezi direct acest folder.",
+      "imagine": "403.png"
+    },
+    {
+      "identificator": 404,
+      "status": true,
+      "titlu":"Pagina nu a fost gasits",
+      "text":"Pagina ceruta nu exista.",
+      "imagine":"404.png"
+}
+
+  ]
+
+
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+    <%- include("../fragmente/head", { titlu: titlu }) %>
+</head>
+
+
+<body>
+    <%- include("../fragmente/header")%>                          
+
+    <main>
+        <section id="acasa">
+            <h2> <%= titlu %></h2>
+            <p> <%= text %></p>
+
+
+            <% if(imagine){%>
+                <figure>
+                    <img src="<%= imagine %>" alt="<%= titlu %>">
+                </figure>
+            <%}%>
+
+        </section>
+    </main>
+
+    <%-include("../fragmente/footer") %>
+</body>
+</html>
+
+

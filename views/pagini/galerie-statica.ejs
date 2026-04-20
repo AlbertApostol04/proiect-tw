@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ro">
+
+
+<head>
+
+  <%- include("../fragmente/head", { titlu: "Galerie statică - SportGear" }) %>
+</head>
+
+
+
+<body>
+  <%- include("../fragmente/header")%>
+
+  <main class="pagina-galerie">
+    <section id="acasa">
+    <h2>Galerie statica</h2>
+      <p>Aici sunt prezentate imagini reprezentative pentru produsele SportGear.</p>
+
+      <div class="grid-galerie">
+        <figure>
+
+          <img src="/resurse/img/gantera.jpg" alt="Imagine SportGear 1">
+          <figcaption>Articole sportive pentru antrenamente zilnice.</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src ="/resurse/img/fotbal.jpg" alt="Imagine SportGear 2">
+          <figcaption>Echipamente pentru alergare si fitness. </figcaption>
+        </figure>
+
+        <figure>
+          <img src="/resurse/img/outdoor.jpg" alt="Imagine SportGear 3">
+          <figcaption>Produse SportGear pentru sport si miscare .</figcaption>
+        </figure>
+    </div>
+    </section>
+
+    <a href="#acasa" id="link-top">Înapoi sus</a>
+  </main>
+
+  <%-include("../fragmente/footer")%>
+</body>
+
+</html>
+
+
+
+
+

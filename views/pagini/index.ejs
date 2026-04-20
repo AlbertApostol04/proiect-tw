@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ro">
+    
+
+<head>
+  <%- include("../fragmente/head", { titlu: "SportGear" })%>
+</head>
+<body>
+  <%-include("../fragmente/header") %>
+
+  <main>
+    <section id="acasa">
+      <h2>Acasa</h2>
+      <figure>
+        <a href="/resurse/img/oimaginemaimare.png">
+          <picture>
+            <source media="(max-width: 600px)" srcset="/resurse/img/oimaginemaimica.png">
+            <source media="(max-width: 1024px)" srcset="/resurse/img/oimagine.png">
+            <img
+              src="/resurse/img/oimaginemaimare.png"
+              alt="Echipamente sportive SportGear"
+              title="SportGear | magazin de echipamente sportive">
+          </picture>
+        </a>
+        <figcaption>Magazin online de articole sportive: alergare, fitness, fotbal și outdoor.</figcaption>
+      </figure>
+
+
+
+      <section id="categorii">
+        <h3> Categorii
+
+        </h3>
+        <p>Găsești articole sportive și echipamente sportive pentru toate nivelurile,  de la începători la avansați.</p>
+        <ul>
+
+          <li>Alergare & Atletism: imbracaminte, pantofi de alergare si accesorii</li>
+          <li>Fitness & Sală: imbracaminte , greutati si accesorii</li>
+
+          <li>Outdoor & drumetii: imbracaminte, pantofi si accesorii</li>
+          <li>Sporturi de echipa: fotbal, rugby,basket</li>
+        </ul>         
+      </section>
+
+      <section id="oferte">
+        <h3>Oferte</h3>
+
+
+        <p>Descoperă reduceri sport la echipamente sportive pentru alergare, fitness și fotbal. Promoțiile se actualizează săptămânal.</p>
+        <ul>
+
+          <li>
+            -20% la gantere și accesorii fitness</li>
+          <li>-15% la pantofi alergare Adidas.</li>
+          <li>Transport gratuit la comenzi peste 150 lei</li>
+        </ul>
+        <p>Cum zicem noi: <q>echipamentul potrivit face diferența</q>.</p>
+      </section>
+
+      <section id="evenimente">
+        <h3>Evenimente</h3>
+        <ul>
+          <li>
+            <time datetime="2026-03-16T18:00">16 martie 2026, 18:00</time>
+            <b>Testare pantofi alergare.</b> Clientii pot incerca modelele noi si pot primi recomandari pentru alegerea pantofilor potriviti.
+          </li>
+          <li>
+            <time datetime="2026-04-16T18:00">16 aprilie 2026, 18:00</time>
+            <b>Workshop fitness (gantere si tehnica).</b> Prezentam exercitii de baza si modul corect de folosire a ganterelor.
+          </li>
+          <li>
+            <time datetime="2026-05-16T18:00">16 mai 2026, 18:00</time>
+            <b>Testare benzi de alergat (competitie semimaraton).</b> Participantii pot testa echipamentele si pot afla sfaturi pentru antrenament.
+          </li>
+        </ul>
+
+        <p id="referinta">
+          Pentru mai multe sfaturi despre alergare si efectele ei benefice asupra sanatatii, poti consulta
+          <a href="https://en.wikipedia.org/wiki/Running#Health_benefits" target="_blank" rel="noopener">
+            https://en.wikipedia.org/wiki/Running<wbr>#Health_benefits
+          </a>.
+        </p>
+      </section>
+    </section>
+
+    <section id="produse">
+      <h2>Produse</h2>
+      <p>    
+        În secțiunea Produse găsesti echipamente sportive pentru alergare, fitness, fotbal și ciclism.
+        Poți alege pantofi alergare, gantere, ghete de fotbal, bocanci de drumetie și casca ciclism, plus accesorii sport.
+        Oferim livrare rapida, iar returul este simplu în 14 zile.
+      </p>
+      <p>
+        Stoc pantofi alergare:
+        <meter min="0" max="100" low="30" high="80" optimum="90" value="70">70 din 100</meter>
+      </p>
+      <p>
+        Stoc gantere:
+        <meter min="0" max="100" low="30" high="80" optimum="90" value="45">45 din 100</meter>
+      </p>
+      <p>
+        <a href="/resurse/CATALOG SPORTGEAR.PDF" download="catalog_sportgear_oficial.pdf">
+          Descarca catalogul SportGear
+        </a>
+      </p>
+
+      <p><small>Preturile de pe site includ <abbr title="Taxa pe Valoarea Adaugata">TVA</abbr>.</small></p>
+      <blockquote>
+        <p>„Dedicarea face ca visele să devină realitate” - Kobe Bryant</p>
+      </blockquote>
+
+    </section>
+
+
+
+    <section id="video">
+      <h2>Video</h2>
+
+      <div>
+        <a href="https://www.youtube.com/embed/tUykoP30Gb0" target="video_iframe">Video fitness</a>
+        <a href="https://www.youtube.com/embed/VEfDcyDFybM" target="video_iframe">Video alergare</a><a href="https://www.youtube.com/embed/tUykoP30Gb0" target="video_iframe">Video incarcat initial</a>
+      
+    </div>
+
+      <iframe
+        name="video_iframe"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tUykoP30Gb0"
+        title="Video SportGear"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="tabel-produse">
+      <h2> Tabel produse</h2>
+
+      <table>
+
+
+        <caption>Exemple de produse SportGear</caption>
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Produs</th>
+            <th>Pret</th>
+            <th>Disponibilitate</th>
+          </tr></thead>
+
+        <tbody>
+          <tr>
+            <td  rowspan="2">Alergare</td>
+            <td>Pantofi alergare</td>
+            <td>299 lei</td>
+            <td>In stoc</td>
+          </tr>
+          <tr>
+            <td>Tricou alergare</td>
+            <td>89 lei</td>
+            <td>In stoc</td>
+          </tr>
+          <tr>
+            <td>Fitnes</td>
+            <td>Set gantere</td>
+            <td>199 lei</td>
+            <td>In stoc</td>
+          </tr>
+          <tr>
+            <td>Fotbal</td>
+            <td>Ghete fotbal</td>
+            <td>258 lei</td>
+            <td>Stoc limitat</td>
+          </tr>
+          <tr>
+            <td>Ciclism</td>
+            <td>Casca ciclism</td>
+            <td>149 lei</td>
+            <td>In stoc</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Produsele si preturilr sunt orientative.</td>
+
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id = "intrebari-frecvente">
+      <h2>Intrebari frecvente</h2>
+
+
+      <details>
+        <summary>In cat timp se livreaza produsele?
+
+        </summary>
+        <p>Produsele sunt livrate in general in 1-3 zile lucratoare.</p>
+      </details>
+
+      <details>
+
+        <summary>Pot returna produsele?</summary>
+
+        <p>Da, returul se poate face in termen de 14 zile.</p>
+      </details>
+    < /section>
+
+    <aside>
+      <h2>Informatii importante!</h2 >
+      <p>La orice comanda de <strong>peste 150 de lei</strong> transportul este gratuit.</p>
+      <p>
+
+        Nu uitati ca dieta este la fel ca sportul pentru sanatate. Aveti
+        <a href="https://www.apollohospitals.com/ro/health-library/balanced-diet" target="_blank" rel="noopener">
+          aici
+        </a>
+
+        cateva informatii utile.
+      </p>
+
+    </aside>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>Ai întrebări despre livrare, retur sau produse? Scrie-ne și îți răspundem de indata.</p>
+      
+      <ul>
+    <li>Email: sportgear.contact@gmail.com</li>
+    <li>Telefon: 0712 345 678</li>
+    <li>Program: Luni-Sambata: 9:00-17:00.</li>
+      </ul>
+    </section>
+
+    <a href="#acasa" id="link-top">Înapoi sus</a>
+  </main>
+
+  <%- include("../fragmente/footer") %>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
