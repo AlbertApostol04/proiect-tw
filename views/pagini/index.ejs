@@ -84,7 +84,7 @@
     </section>
 
     <section id="produse">
-      <h2>Produse</h2>
+      <h2 class="efect-css-reflexie-text" data-text="Produse">Produse</h2>
       <p>    
         În secțiunea Produse găsesti echipamente sportive pentru alergare, fitness, fotbal și ciclism.
         Poți alege pantofi alergare, gantere, ghete de fotbal, bocanci de drumetie și casca ciclism, plus accesorii sport.
@@ -110,28 +110,64 @@
       </blockquote>
 
     </section>
+  <hr class="efect-css-stilizare-hr">
+
+  <section id="galerie-statica" class="sectiune-galerie">
+    <h2>Galerie statică SportGear</h2>
 
 
+    <p>
+      Imaginile sunt afișate în funcție de momentul zilei:
+      <strong><%= timpGalerie %></strong>.
 
-    <section id="video">
-      <h2>Video</h2>
+    </p>
 
-      <div>
-        <a href="https://www.youtube.com/embed/tUykoP30Gb0" target="video_iframe">Video fitness</a>
-        <a href="https://www.youtube.com/embed/VEfDcyDFybM" target="video_iframe">Video alergare</a><a href="https://www.youtube.com/embed/tUykoP30Gb0" target="video_iframe">Video incarcat initial</a>
-      
+    <div class="galerie-statica-grid">
+      <% if (typeof imaginiGalerie !== "undefined" && imaginiGalerie.length > 0){ %>
+        <% for (let imagine of imaginiGalerie) { %>
+          <figure>
+            <picture>
+
+              <source media="(max-width: 700px)" srcset="<%= imagine.cale_mica %>">
+              <source media="(max-width: 1100px)" srcset="<%= imagine.cale_medie %>">
+              <img src="<%= imagine.cale_mare %>" alt="<%= imagine.alt %>" title="<%= imagine.nume %>">
+            </picture>
+
+            <figcaption>
+              <%= imagine.nume %> - <%= imagine.descriere %>
+            </figcaption>
+
+            <small>
+              Licență: <%= imagine.licenta %> |
+              Autor: <%= imagine.autor %> |
+              Sursă:<%= imagine.sursa %>
+            </small>
+          </figure>
+        <% } %>
+      <% } else { %>
+        <p>Nu există imagini disponibile pentru această perioada.</p>
+      <% } %>
     </div>
+  </section>
 
-      <iframe
-        name="video_iframe"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/tUykoP30Gb0"
-        title="Video SportGear"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </section>
+
+  <section id= "video">
+    <h2>Video </h2>
+    <p>Vezi un scurt clip de prezentare SportGear.</p>
+
+    <div class="video-container-html5">
+      <video class="video-html5" controls preload="none" poster="/resurse/video/poster.png">
+
+        <source src="/resurse/video/sportgear.webm" type="video/webm">
+        <source src="/resurse/video/sportgear.mp4"type="video/mp4">
+
+        <track src="/resurse/video/subtitrari/ro.vtt" kind="subtitles" srclang="ro"label="Română" default>
+
+        <track src="/resurse/video/subtitrari/en.vtt" kind="subtitles" srclang="en"label="English">
+        Browserul tău nu suportă elementul video
+      </video>
+    </div>
+  </section>
 
     <section id="tabel-produse">
       <h2> Tabel produse</h2>
@@ -219,7 +255,8 @@
 
         cateva informatii utile.
       </p>
-
+      
+      <div class="efect-css-duotone" aria-label="Imagine SportGear cu efect duotone"></div>
     </aside>
 
     <section id="contact">

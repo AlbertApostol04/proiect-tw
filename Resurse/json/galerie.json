@@ -1,0 +1,197 @@
+{
+  "cale_galerie": "img",
+  "imagini": [
+    {
+      "cale_relativa":"img/biciclist.jpg",
+      "nume": "Ciclism",
+      "descriere": "Echipament pentru ciclism si activitati sportive in aer liber.",
+      "timp": "dimineata",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/biciclist.jpg"
+    },
+
+
+    {
+      "cale_relativa":"img/bodybuilder.jpg",
+      "nume": "Antrenament de forta",
+      "descriere": "Imagine reprezentativa pentru fitness si sala.",
+      "timp": "dimineata",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/bodybuilder.jpg"
+    },
+
+
+    {
+      "cale_relativa":"img/fotbal.jpg",
+      "nume": "Fotbal",
+      "descriere": "Articole sportive pentru fotbal si sporturi de echipa.",
+      "timp": "dimineata",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/fotbal.jpg"
+    },
+
+
+
+    {
+      "cale_relativa":"img/gantera.jpg",
+      "nume": "Gantera fitness",
+      "descriere": "Accesoriu sportiv pentru antrenamente de forta.",
+      "timp": "dimineata",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/gantera.jpg"
+    },
+    {
+      "cale_relativa":"img/oimagine.png",
+      "nume": "SportGear",
+      "descriere": "Imagine generala pentru magazinul SportGear.",
+      "timp": "dimineata",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/oimagine.png"
+    },
+
+
+    {
+      "cale_relativa":"img/oimaginemaimare.png",
+      "nume": "SportGear prezentare",
+      "descriere": "Imagine de prezentare pentru pagina principala.",
+      "timp": "dimineata",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/oimaginemaimare.png"
+    },
+
+    {
+      "cale_relativa":"img/oimaginemaimica.png",
+      "nume": "SportGear responsive",
+      "descriere": "Imagine folosita pentru afisare responsive.",
+      "timp": "zi",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/oimaginemaimica.png"
+    },
+
+
+    {
+      "cale_relativa":"img/outdoor.jpg",
+      "nume": "Outdoor",
+      "descriere": "Produse pentru drumetii si activitati in aer liber.",
+      "timp": "zi",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/outdoor.jpg"
+    },
+
+
+    {
+      "cale_relativa":"img/racers.jpg",
+      "nume": "Alergare",
+      "descriere": "Imagine reprezentativa pentru alergare si performanta.",
+      "timp": "zi",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/racers.jpg"
+    },
+    {
+      "cale_relativa":"img/biciclist.jpg",
+      "nume": "Ciclism urban",
+      "descriere": "Echipamente pentru ciclism si siguranta.",
+      "timp": "zi",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/biciclist.jpg"
+    },
+
+
+    {
+      "cale_relativa":"img/fotbal.jpg",
+      "nume": "Fotbal zi",
+      "descriere": "Produse pentru antrenamente si meciuri de fotbal.",
+      "timp": "zi",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/fotbal.jpg"
+    },
+
+    {
+      "cale_relativa":"img/gantera.jpg",
+      "nume": "Fitness zi",
+      "descriere": "Accesorii pentru exercitii de forta.",
+      "timp": "zi",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/gantera.jpg"
+    },
+
+    {
+      "cale_relativa":"img/bodybuilder.jpg",
+      "nume": "Fitness seara",
+      "descriere": "Imagine pentru antrenamente intense.",
+      "timp": "noapte",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/bodybuilder.jpg"
+    },
+
+
+    {
+      "cale_relativa":"img/oimagine.png",
+      "nume": "SportGear noapte",
+      "descriere": "Imagine de prezentare pentru magazinul online.",
+      "timp": "noapte",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/oimagine.png"
+    },
+
+
+    {
+      "cale_relativa":"img/outdoor.jpg",
+      "nume": "Outdoor seara",
+      "descriere": "Articole pentru activitati sportive in aer liber.",
+      "timp": "noapte",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/outdoor.jpg"
+    },
+
+
+    {
+      "cale_relativa":"img/racers.jpg",
+      "nume": "Alergare seara",
+      "descriere": "Produse pentru alergare si performanta.",
+      "timp": "noapte",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/racers.jpg"
+    },
+
+
+    {
+      "cale_relativa":"img/oimaginemaimare.png",
+      "nume": "SportGear mare",
+      "descriere": "Imagine mare pentru prezentarea site-ului.",
+      "timp": "noapte",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/oimaginemaimare.png"
+    },
+
+
+    {
+      "cale_relativa":"img/oimaginemaimica.png",
+      "nume": "SportGear mica",
+      "descriere": "Imagine mica pentru afisari responsive.",
+      "timp": "noapte",
+      "licenta":"imagine folosita in scop educational",
+      "autor": "sursa locala proiect",
+      "sursa": "Resurse/img/oimaginemaimica.png"
+    }
+  ]
+
+
+}

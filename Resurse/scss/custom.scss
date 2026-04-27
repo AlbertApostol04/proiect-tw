@@ -1,0 +1,45 @@
+$primary:#1e3a8a;
+$secondary: #f97316;
+$success: #14b8a6;
+$info: #0ea5e9;
+$warning:#f59e0b;
+$danger : #dc3545;
+$light: #eef4ff;
+$dark: #1f2937;
+
+$body-bg: #f4f7fb;
+$body-color: #1f2937;
+
+$font-family-base: "Montserrat", Arial, Helvetica,sans-serif;
+
+$border-radius: 1rem;
+$border-radius-sm: 0.6rem;
+$border-radius-lg: 1.4rem;
+$border-radius-xl: 1.8rem;
+$border-radius-xxl :2.2rem;
+
+
+
+$h1-font-size:2.4rem;
+$h2-font-size: 1.85rem;
+$h3-font-size: 1.35rem;
+
+$grid-breakpoints:(
+  xs: 0,
+  sm: 576px,
+  md: 820px,
+  lg: 1100px,
+  xl: 1320px,
+  xxl: 1500px);
+
+
+$container-max-widths:(
+  sm: 540px,
+  md: 760px,
+  lg: 1040px,
+  xl: 1240px,
+  xxl: 1400px);
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+

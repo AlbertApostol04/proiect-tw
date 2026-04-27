@@ -2,50 +2,72 @@
 <html lang="ro">
 
 
-<head>
 
+<head>
   <%- include("../fragmente/head", { titlu: "Galerie statică - SportGear" }) %>
 </head>
 
-
-
 <body>
-  <%- include("../fragmente/header")%>
+  
+  <%- include("../fragmente/header") %>
+
 
   <main class="pagina-galerie">
-    <section id="acasa">
-    <h2>Galerie statica</h2>
-      <p>Aici sunt prezentate imagini reprezentative pentru produsele SportGear.</p>
-
-      <div class="grid-galerie">
-        <figure>
-
-          <img src="/resurse/img/gantera.jpg" alt="Imagine SportGear 1">
-          <figcaption>Articole sportive pentru antrenamente zilnice.</figcaption>
-        </figure>
+    <section id="galerie-statica" class="sectiune-galerie">
+      <h2>Galerie statică</h2>
 
 
-        <figure>
-          <img src ="/resurse/img/fotbal.jpg" alt="Imagine SportGear 2">
-          <figcaption>Echipamente pentru alergare si fitness. </figcaption>
-        </figure>
+      <p>
+        Aici sunt prezentate imagini reprezentative pentru produsele SportGear.
+        Imaginile sunt afișate în funcție de momentul zilei:
+      <strong><%= timpGalerie %></strong>.
+      </p>
 
-        <figure>
-          <img src="/resurse/img/outdoor.jpg" alt="Imagine SportGear 3">
-          <figcaption>Produse SportGear pentru sport si miscare .</figcaption>
-        </figure>
-    </div>
+      <div class="galerie-statica-grid">
+        <% if (typeof imaginiGalerie !== "undefined" && imaginiGalerie.length > 0) { %>
+
+
+
+          <% for (let imagine of imaginiGalerie){ %>
+            <figure>
+              <picture>
+                <source media="(max-width: 700px)" srcset="<%= imagine.cale_mica %>">
+                <source media="(max-width: 1100px)" srcset="<%= imagine.cale_medie %>">
+
+                <img
+                  src="<%= imagine.cale_mare %>"
+                  alt="<%= imagine.alt %>"
+                  title="<%= imagine.nume %>">
+              </picture>
+
+              <figcaption>
+                <%= imagine.nume %> -<%= imagine.descriere %>
+              </figcaption>
+
+              <small>
+                Licență: <%= imagine.licenta %> |
+                Autor: <%= imagine.autor %> |
+                Sursă:<%= imagine.sursa %>
+              </small>
+            </figure>
+          <% } %>
+
+        <% } else { %>
+        <p>Nu există imagini disponibile pentru această perioadă.</p>
+        <% } %>
+
+      </div>
     </section>
 
-    <a href="#acasa" id="link-top">Înapoi sus</a>
+    <a href="#galerie-statica" id="link-top">Înapoi sus</a>
   </main>
 
-  <%-include("../fragmente/footer")%>
+  <%- include("../fragmente/footer") %>
+
 </body>
 
+
 </html>
-
-
 
 
 

@@ -3,3 +3,5 @@ temp/
 logs/
 backup/
 fisiere_uploadate/
+
+*.zip
